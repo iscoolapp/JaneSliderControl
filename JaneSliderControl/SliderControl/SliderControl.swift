@@ -159,8 +159,8 @@ import UIKit
                 let success: Bool
                 let finalX: CGFloat
                 
-                //If we are more than 65% through the swipe and moving the the right direction
-                if self.progress > 0.65 && recognizer.velocity(in: self).x > -1.0 {
+                //If we are more than 99% through the swipe and moving the the right direction
+                if self.progress > 0.99 && recognizer.velocity(in: self).x > -1.0 {
                     success = true
                     finalX = self.bounds.size.width
                 } else {
